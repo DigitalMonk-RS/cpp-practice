@@ -37,7 +37,7 @@ int main()
     cout<<"Details in book1 object"<<endl;
     book1.set_book_info("Book1","Author1",333,555);
     book1.display_info();
-    cout<<"Details in book1 object"<<endl;
+    cout<<"Details in book2 object"<<endl;
     Book book2;
     book2.set_book_info("Book2","Author2",300,500);
     book2.display_info();
