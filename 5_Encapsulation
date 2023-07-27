@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+/*
+    use of getter setter method
+    encapsulation
+    is one among the 4 pillars of OOP
+    involves bundling of data members and functions inside a single class
+    it's helpful for information hiding as well
+*/
+class Book
+{
+private:
+    string book_name;
+    string author_name;
+
+public:
+    void set_bookname(string p_name);
+    string get_bookname();
+    void set_authorname(string p_aname);
+    string get_authorname();
+};
+
+void Book::set_bookname(string p_name)
+{
+    book_name = p_name;
+}
+string Book::get_bookname()
+{
+    return book_name;
+}
+
+void Book::set_authorname(string p_aname)
+{
+    author_name = p_aname;
+}
+string Book::get_authorname()
+{
+    return author_name;
+}
+int main()
+{
+    Book book1;
+    book1.set_bookname("Shirishko Phool");
+    book1.set_authorname("Parijat");
+    /*
+        cout<<book1.book_name<<endl;
+        cout<<book1.author_name<<endl;
+        is not allowed
+        we use getter method for that
+    */
+    cout<<"Book Name: "<<book1.get_bookname()<<endl;
+    cout<<"By: "<<book1.get_authorname()<<endl;
+    return 0;
+}
+
