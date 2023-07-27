@@ -19,3 +19,7 @@ programs for understanding C++ in simple and efficient way!
   
 4_using scope resolution operator
   use of scope resolution operator :: for defining a function outside class
+
+5_Encapsulation
+  getter setter methods
+  information hiding
