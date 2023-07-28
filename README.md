@@ -23,3 +23,13 @@ programs for understanding C++ in simple and efficient way!
 5_Encapsulation
   getter setter methods
   information hiding
+  
+6_Need for Inheritance
+  why inheritance is needed?
+  scenario where code reusability is needed and used?
+  
+7_Inheritance
+  what is inheritance?
+  why inheritance is needed?
+  accessing the method in parent class
+  code reusability concept
