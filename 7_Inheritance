@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+/*
+Inheritance
+-one of the most important features of Object-Oriented Programming.
+inheritance is used for communication between classes
+follows and implements the concept of code reusability
+child class inherits the feature of parent class
+    it can change/add the inherited features of parent class
+    that don't affect the existing parent class
+*/
+/*
+    Account person, adiminstration person,technical person all have same details
+    that are repeated in all classes
+    name,Joining date,salary is there
+    without inheritance we need to write all these steps in all of the classes
+
+    so we will make a new parent class that will contain the information that's needed
+    by all of the classes
+    our parent class will be Employee
+    all of the sections mentioned above are employees
+*/
+class Employee
+{
+public:
+    void employeeInfo()
+    {
+        cout<<"This is common info of all of the employees"<<endl;
+        cout<<"name,Joining date,salary is there of all"<<endl;
+    }
+};
+//let's establish the relation of parent and child class
+//Employee is the parent class and Account will be the child class
+//Similar will be the relation with Administration and Technical
+class Account: public Employee
+{
+public:
+    void accountPerson()
+    {
+        cout<<"Looks after account work"<<endl;
+    }
+};
+class Administration: public Employee
+{
+public:
+    void administrationPerson()
+    {
+        cout<<"Looks after administrative work"<<endl;
+    }
+};
+class Technical: public Employee
+{
+public:
+    void technicalPerson()
+    {
+        cout<<"Looks after technical work"<<endl;
+    }
+};
+int main()
+{
+    Account ac1;
+    ac1.employeeInfo();//accessing the method of parent class
+    ac1.accountPerson();
+    cout<<endl;
+    Administration ad1;
+    ad1.employeeInfo();//accessing the method of parent class
+    ad1.administrationPerson();
+    cout<<endl;
+    Technical t1;
+    t1.employeeInfo();//accessing the method of parent class
+    t1.technicalPerson();
+    return 0;
+}
